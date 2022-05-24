@@ -38,6 +38,12 @@ public class Inputcontroller : MonoBehaviour
         {
             Logics.instance.PLAYER_DIR = Logics.PlayerDirection.NONE;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //공격을 할것.
+            Logics.instance.Fire();
+        }
     }
 
     private void LateUpdate()
